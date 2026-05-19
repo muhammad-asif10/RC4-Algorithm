@@ -1,5 +1,8 @@
 # RC4 Algorithm: Interactive Visualization and Analysis
 
+[![Website](https://img.shields.io/badge/Website-Visit_Live_Site-orange?style=for-the-badge&logo=firefox&logoColor=white)](https://muhammad-asif10.github.io/RC4-Algorithm/)
+
+
 ## Abstract
 
 This repository presents an interactive web-based implementation and visualization of the RC4 (Rivest Cipher 4) stream cipher algorithm. RC4, originally designed by Ronald Rivest in 1987, is one of the most widely used stream ciphers in cryptographic applications. This project provides a comprehensive step-by-step visualization of the algorithm's internal state transitions, enabling researchers, students, and cybersecurity professionals to gain deeper insights into the mechanics of stream cipher cryptography. The implementation includes both encryption and decryption operations with real-time visualization of the Key-Scheduling Algorithm (KSA) and the Pseudo-Random Generation Algorithm (PRGA) phases.
