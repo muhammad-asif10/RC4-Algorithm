@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RC4 Algorithem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>RC4</h1>
+        <p>Step-by-Step Execution</p>
+    </header>
+
+    <div class="controls">
+        <div class="input-group">
+            <label>Secret Key:</label>
+            <input type="text" id="key" value="YELLOW">
+        </div>
+        <div class="input-group">
+            <label>Input (Plain/Hex):</label>
+            <input type="text" id="inputData" value="HELLO">
+        </div>
+        <div class="input-group speed-group">
+            <label>Delay (ms):</label>
+            <input type="range" id="speed" min="1" max="500" value="10">
+        </div>
+        <div class="buttons">
+            <button id="btnEncrypt">ENCRYPT</button>
+            <button id="btnDecrypt">DECRYPT</button>
+        </div>
+    </div>
+
+    <div class="dashboard">
+        <div class="panel visualization">
+            <h2>S-BOX STATE (0-255)</h2>
+            <div id="sbox" class="grid"></div>
+            <div class="legend">
+                <span class="legend-item i-marker">i</span>
+                <span class="legend-item j-marker">j</span>
+                <span class="legend-item k-marker">t (Keystream)</span>
+            </div>
+        </div>
+
+        <div class="panel logs">
+            <h2>EXECUTION LOG</h2>
+            <div id="status" class="status-box">Ready</div>
+            <div id="stepInfo" class="step-info">Wait for execution...</div>
+            <div class="final-result">
+                <strong>FINAL RESULT:</strong>
+                <div id="finalOutput">-</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
